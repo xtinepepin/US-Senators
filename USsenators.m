@@ -61,7 +61,7 @@ test_data_norm = (test_data - repmat(mu_test, num_test_data, 1)) ...
 [acc, c_opt, g_opt] = OptimizeSVMparams(train_data_norm, train_labels);
 
 %% Predict test labels
-%[predict_label] = PredictLabels(train_data_norm, train_labels, ...
-%    test_data_norm, test_labels, c_opt, g_opt);
+[predict_label] = PredictLabels(train_data_norm, train_labels, ...
+    test_data_norm, test_labels, c_opt, g_opt);
 
         
